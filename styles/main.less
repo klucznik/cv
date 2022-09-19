@@ -1,0 +1,59 @@
+@import "lib/tailwind.css";
+@import "grid";
+
+body {
+	font-family: "Proxima Nova", "Helvetica Neue", Arial, Helvetica, sans-serif;;
+	background-color: #fafaf4;
+	line-height: 1.5;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.31em; }
+h4 { font-size: 1.13em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { margin: 0.5em 0; }
+
+#container {
+	width: calc(12 * @width + 11 * @gutter);
+	margin: 40px auto;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: @gutter;
+	box-sizing: initial;
+}
+
+.color { color: #e11; }
+
+.opis {
+	float: right;
+	text-align: right;
+	font-family: "Galano Grotesque", Georgia, Palatino, "Palatino Linotype", "Times New Roman", serif;
+	font-style: italic;
+	color: #555;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.desc {
+	font-size: 0.88em;
+	padding-left: 1em;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li { margin-bottom: 0.5em; }
+}
+
+#footer {
+	text-align: center;
+	font-family: Georgia, Palatino, "Palatino Linotype", "Times New Roman", serif;
+	font-style: italic;
+	color: #555;
+	font-size: 0.75em;
+	padding: 40px 0;
+}

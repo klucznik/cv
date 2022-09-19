@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.text-hide {
+		text-indent: 101%;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.text-prevent-breakouts {
+		-ms-word-break: break-all;
+		word-break: break-all;
+		word-break: break-word;
+		hyphens: auto;
+	}
+
+	.clearFix:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}

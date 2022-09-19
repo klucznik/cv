@@ -1,0 +1,28 @@
+body { 
+	background-color: #fff; 
+	font-size: 90%;
+}
+
+#container {
+	border: none;
+	background-color: transparent;
+	margin: 0 auto;
+}
+
+#footer {
+	padding-bottom: 0;
+}
+
+a { text-decoration: none; color: #000; }
+a:visited { color: #000; }
+
+.row { page-break-inside: auto; }
+
+.page-break { page-break-after:always; }
+
+@page { 
+   @top-left { content: ""; content: normal; };
+   @top-right { content: ""; content: normal; };
+   @bottom-left { content: ""; content: normal; };
+   @bottom-right { content: ""; content: normal; };
+}

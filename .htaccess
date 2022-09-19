@@ -1,0 +1,14 @@
+#RewriteEngine on
+#RewriteBase /
+
+#ErrorDocument 404 /404.php
+
+<IfModule mod_headers.c>
+	<FilesMatch "\.(flv|gif|jpg|jpeg|png|ico|pdf|mp3|mp4)$">
+		Header set Cache-Control "max-age=2678400, public"
+	</FilesMatch>
+
+	<FilesMatch "\.(js|css|pdf|swf)$">
+		Header set Cache-Control "max-age=2678400, private"
+	</FilesMatch>
+</IfModule>

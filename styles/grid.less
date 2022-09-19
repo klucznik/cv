@@ -1,0 +1,72 @@
+/* 12 columns, 3.75em each, with 1.25em gutter */
+@gutter: 20px;
+@width: 60px;
+@hrsp: 20px;
+
+.row {
+	width: 12 * @width + 11 * @gutter;
+	overflow: hidden;
+	clear: both;
+
+	.row {
+		clear: both;
+		width: auto;
+		padding: 0;
+		display: inline-block;
+	}
+
+ 	.column {
+		margin-right: @gutter;
+		overflow: hidden;
+		float: left;
+		display: inline;
+
+	    &, ::before, ::after {
+			box-sizing: initial;
+	    }
+	}
+	.last, .row .only { margin-right: 0; }
+	.empty { height: 1px; }
+
+	.size1 { width: 1 * @width + 0 * @gutter; }
+	.size2 { width: 2 * @width + 1 * @gutter; }
+	.size3 { width: 3 * @width + 2 * @gutter; }
+	.size4 { width: 4 * @width + 3 * @gutter; }
+	.size5 { width: 5 * @width + 4 * @gutter; }
+	.size6 { width: 6 * @width + 5 * @gutter; }
+	.size7 { width: 7 * @width + 6 * @gutter; }
+	.size8 { width: 8 * @width + 7 * @gutter; }
+	.size9 { width: 9 * @width + 8 * @gutter; }
+	.size10 { width: 10 * @width + 9 * @gutter; }
+	.size11 { width: 11 * @width + 10 * @gutter; }
+	.size12 { width: 12 * @width + 11 * @gutter; margin-right: 0; }
+
+	.pad1 { padding-left: 1 * @width + 1 * @gutter; }
+	.pad2 { padding-left: 2 * @width + 2 * @gutter; }
+	.pad3 { padding-left: 3 * @width + 3 * @gutter; }
+	.pad4 { padding-left: 4 * @width + 4 * @gutter; }
+	.pad5 { padding-left: 5 * @width + 5 * @gutter; }
+	.pad6 { padding-left: 6 * @width + 6 * @gutter; }
+	.pad7 { padding-left: 7 * @width + 7 * @gutter; }
+	.pad8 { padding-left: 8 * @width + 8 * @gutter; }
+	.pad9 { padding-left: 9 * @width + 9 * @gutter; }
+	.pad10 { padding-left: 10 * @width + 10 * @gutter; }
+	.pad11 { padding-left: 11 * @width + 11 * @gutter; }
+	.pad12 { padding-left: 12 * @width + 12 * @gutter; }
+	
+	.margin1 { margin-left: 1 * @width + 1 * @gutter; }
+	.margin2 { margin-left: 2 * @width + 2 * @gutter; }
+	.margin3 { margin-left: 3 * @width + 3 * @gutter; }
+	.margin4 { margin-left: 4 * @width + 4 * @gutter; }
+	.margin5 { margin-left: 5 * @width + 5 * @gutter; }
+	.margin6 { margin-left: 6 * @width + 6 * @gutter; }
+	.margin7 { margin-left: 7 * @width + 7 * @gutter; }
+	.margin8 { margin-left: 8 * @width + 8 * @gutter; }
+	.margin9 { margin-left: 9 * @width + 9 * @gutter; }
+	.margin10 { margin-left: 10 * @width + 10 * @gutter; }
+	.margin11 { margin-left: 11 * @width + 11 * @gutter; }
+	.margin12 { margin-left: 12 * @width + 12 * @gutter; }
+}
+
+.hrsp { height: @hrsp; clear: both; }
+.hrspsmall { height: @hrsp / 2; clear: both; }

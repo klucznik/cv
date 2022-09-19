@@ -1,0 +1,129 @@
+/* >>> CSS RESET based  on Eric Meyer css reset v1.0 | 20080212 <<< */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* html5 */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block; 
+}
+
+body { 
+	line-height: 1.4;
+	/*font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+	/*font-family: Georgia, Palatino, 'Palatino Linotype', 'Times New Roman', serif;*/
+	text-rendering: optimizeLegibility;
+}
+
+pre, cite, code, kbd, samp {
+	font-family: 'Andale Mono', 'Courier New', Courier, monospace;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;   
+	border-top: 1px solid #999;
+	margin: 1em 0;
+	padding: 0;
+}
+
+nav ul { list-style: none; }
+ol { list-style: decimal; }
+ul { list-style: disc; }
+ul ul { list-style: circle; }
+ul, ol, dd { padding-left: 2.5em; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote { padding-left: 1.25em; }
+blockquote, q { 
+	quotes: none;
+	font-style: italic;
+}
+blockquote:before, blockquote:after, q:before, q:after { 
+	content: '';
+	content: none;
+}
+
+ul, ol, dl, hr, blockquote, code, p, pre { margin-bottom: 1.5em; }
+ul, ol, dl, hr, blockquote, code { margin-top: 1.5em; }
+ul ul, ul ol, ul dl, ol ol, ol ul, ol dl, dl dl, dl ul, dl ol { 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.31em; }
+h4 { font-size: 1.13em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { margin: 0.5em 0; }
+
+ins {
+	text-decoration: none;
+	background-color: #ff9;
+	color: #000;
+}
+mark {
+	background-color: #ff9;
+	color: #000; 
+	font-style: italic;
+	font-weight: bold;
+}
+del { text-decoration: line-through; }
+
+sup, sub {
+	font-size: 0.75em;
+	margin-left: 0.15em;
+}
+sup { vertical-align: 0.4em; }
+sub { vertical-align: -0.3em; }
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #000;
+	cursor:help;
+}
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table, td, th { border: 1px solid #999; }
+td, th, caption { padding: 0.25em; }
+th {
+	text-align: left;
+	background-color: #e4e4e4;
+}
+tr:nth-child(odd) { background-color: #f4f4f4; }
+td { text-align: center; }
+tfoot { font-style: italic; }
+
+input, select { vertical-align: baseline; }
+legend { font-weight: bold; }
+fieldset {
+	padding: 0.25em;
+	margin-bottom: 1.5em;
+	border: 1px solid #999;
+}

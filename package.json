@@ -1,0 +1,41 @@
+{
+	"title": "baseless",
+	"name": "baseless",
+	"description": "",
+	"repository": "",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.7",
+		"browser-sync": "^2.27.10",
+		"fancy-log": "^2.0.0",
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-less": "^5.0.0",
+		"gulp-notify": "^4.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^9.0.1",
+		"gulp-size": "^4.0.1",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-watch": "^5.0.1",
+		"postcss": "^8.4.14",
+		"postcss-assets": "^6.0.0",
+		"postcss-calc": "^8.2.4",
+		"postcss-import": "^15.0.0",
+		"postcss-preset-env": "^7.7.1",
+		"stream-combiner2": "^1.1.1",
+		"tailwindcss": "^3.1.4"
+	},
+	"scripts": {
+		"tailwindConfig": "tailwind-config-viewer"
+	},
+	"browserslist": [
+		">0.5%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
+}
